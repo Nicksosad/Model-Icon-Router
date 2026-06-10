@@ -13,7 +13,8 @@ const DEFAULT_RULES_TEXT = [
     'deepseek => deepseek',
     'mistral => mistralai',
     'grok,xai => xai',
-    'glm,zai => zai',
+    'kimi => kimi',
+    'glm,zai => glm',
     'cohere,command-r => cohere',
     'perplexity,sonar => perplexity',
     'azure => azure_openai',
@@ -23,6 +24,8 @@ const EXTENSION_BASE = '/scripts/extensions/third-party/model-icon-router';
 const CUSTOM_ICON_SOURCES = {
     claude: `${EXTENSION_BASE}/assets/claude.svg`,
     gemini: `${EXTENSION_BASE}/assets/gemini.svg`,
+    kimi: `${EXTENSION_BASE}/assets/kimi.svg`,
+    glm: `${EXTENSION_BASE}/assets/glm.svg`,
 };
 
 const state = {
