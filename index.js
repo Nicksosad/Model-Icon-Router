@@ -20,12 +20,11 @@ const DEFAULT_RULES_TEXT = [
     'azure => azure_openai',
     'gemini,google,gemma,learnlm => gemini',
 ].join('\n');
-const EXTENSION_BASE = '/scripts/extensions/third-party/model-icon-router';
 const CUSTOM_ICON_SOURCES = {
-    claude: `${EXTENSION_BASE}/assets/claude.svg`,
-    gemini: `${EXTENSION_BASE}/assets/gemini.svg`,
-    kimi: `${EXTENSION_BASE}/assets/kimi.svg`,
-    glm: `${EXTENSION_BASE}/assets/glm.svg`,
+    claude: new URL('./assets/claude.svg', import.meta.url).href,
+    gemini: new URL('./assets/gemini.svg', import.meta.url).href,
+    kimi: new URL('./assets/kimi.svg', import.meta.url).href,
+    glm: new URL('./assets/glm.svg', import.meta.url).href,
 };
 
 const state = {
